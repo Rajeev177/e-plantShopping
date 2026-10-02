@@ -16,7 +16,7 @@ export const CartSlice = createSlice({
             );
 
             if (existingItem) {
-                existingItem.quantity++;
+                existingItem.quantity += 1;
             } else {
                 state.items.push({
                     name,
